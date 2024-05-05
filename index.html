@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" 
+    type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/output.css" />
+
+    <title>Lanches Deliver</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+        src="./asset/121.png" 
+        alt="Logo"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-3xl mt-4 mb-2 font-bold text-black">
+        Lanche DELIVER
+      </h1>
+
+      <span class="text-black font-medium">Rua Antonio Soares 193,Zona Leste.</span>
+
+      <div class="bg-green-500 px-4 py-1 rounded-lg mt-5 hover:scale-150 duration-100 " id="date-span">
+        <span class="text-white font-medium">Seg á Dom -18:00 as 22:00</span>       
+      </div>
+
+    </div>
+  </header>
+  <!-- FIM HEADER-->
+
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nosso Menu
+  </h2>
+
+  <!-- Inicio do Menu-->
+  <div id="menu">
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+      <!-- Produto Item -->          
+      <div class="flex gap-2">
+        <img 
+          src="./asset/2.png" 
+          alt="Hamburger Modão"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger Modão</p>
+          <p class="text-sm">
+            Pão leve de fermentação,
+            natural do trigo, Hamburger 160g,
+            queijo prato,alface ,tomate.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 18.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburger Modão"
+              data-price="18.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Fim PRODUTO  Item-->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-2">
+        <img 
+          src="./asset/3.png" 
+          alt="Hamburger Smash"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+   
+        <div>
+          <p class="font-bold">Hamburger da Smash</p>
+          <p class="text-sm">Pão leve de fermentação natural da trigo, Hamburger 160g,
+          queijo prato,alface ,tomate.</p>
+   
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 21.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburger Smash"
+              data-price="21.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+   
+        </div>
+      
+      </div>
+      <!-- Fim Produto Item -->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-2">
+        <img 
+          src="./asset/5.png" 
+          alt="Hamburger Smash"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+ 
+        <div>
+          <p class="font-bold">Hamburger Especial</p>
+          <p class="text-sm">Hamburger duplo 320g, queijo prato,alface, tomate
+          coca-cola 600ml, batata frita media .</p>
+             
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 29.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburger Especial"
+              data-price="29.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+ 
+        </div>
+    
+      </div>
+      <!-- Fim Produto Item -->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-4">
+        <img 
+          src="./asset/4.png" 
+          alt="Hamburger Smash"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger no Pão Frances</p>
+          <p class="text-sm">Pão leve, Hamburger 180g, Baicon,
+          queijo prato, tomate.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 17.50</p>
+            <button 
+               class="bg-gray-900 px-5 rounded add-to-cart-btn"
+               data-name="Hamburger no Pão Frances"
+               data-price="17.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+  
+      </div>
+      <!-- Fim Produto Item -->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-4">
+        <img 
+          src="./asset/1lanche.png" 
+          alt="Hamburger Smash"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Super Burguer </p>
+          <p class="text-sm">Burguer de 150g, queijo prato, baicon, alface e tomate</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 24.50</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Super Burguer"
+              data-price="24.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+  
+      </div>
+      <!-- Fim Produto Item -->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-4">
+        <img 
+          src="./asset/1111.png" 
+          alt="X-tudo "
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">X-tudo</p>
+          <p class="text-sm">
+            X-tudo: Alface, tomate, 
+            cebola roxa, baicon,
+            molho de alho e piques</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">19.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="X-tudo"
+              data-price="24.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+  
+      </div>
+      <!-- Fim Produto Item -->
+
+    </main>
+
+    <div class="mx-automax-w-7x1 px-2 my-2">
+      <h2 class="font-bold text-3xl">
+       
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+      <!-- Produto Item-->          
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./asset/10.png" 
+          alt="Guarana"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Guarana Antartica</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 5.50</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Guaraná"
+              data-price="5.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+  
+      </div>
+      <!-- Fim Produto Item -->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./asset/11.png" 
+          alt=" Coca-lata "
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Coca-Cola</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 6.50</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Coca-Cola"
+              data-price="6.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+  
+      </div>
+      <!-- Fim Produto Item -->
+
+      <!-- Produto Item-->          
+      <div class="flex gap-4">
+        <img 
+          src="./asset/13.png" 
+          alt="Pepsi"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Pepsi</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">RS 4.50</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Pepsi"
+              data-price="4.50"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+  
+      </div>
+      <!-- Fim Produto Item -->
+
+    </div>
+  </div>
+  <!-- Fim do Menu-->
+
+  <!-- MODAL CART -->
+  <div 
+    class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+    id="cart-modal"
+  >  
+
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+      <h2 class="text-center font-bold text-2x1 mb-2">Meu carrinho</h2>
+
+      <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+      <p class="font-bold">Total: <span id="cart-Total">0.00</span> </p>
+
+      <p class="font-bold mt-4">Endereço de entrega:</p>
+      <input 
+        type="text"
+        placeholder="Digite seu Endereço"
+        id="address"
+        class="w-full border-2 p-1 rounded my-1"
+      >
+      <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+      <div class="flex items-center justify-between mt-4 w-full">
+        <button id="close-modal-btn">Fechar</button>
+        <button id="checkout-btn" class="bg-green-400 text-white px-4 py-1">Finalizar pedido</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- FIM MODAL CART -->
+
+  <!-- BUTTON CART FOOTER -->
+  <footer class="w-full bg-red-700 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+      class="flex items-center gap-2 text-white font-bold"
+      id="cart-btn"
+      >
+      (<span id="cart-count">0</span>)
+      MEU CARRINHO
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+  <!-- FIM BUTTON CART FOOTER -->
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
