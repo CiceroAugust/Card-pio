@@ -140,7 +140,7 @@ checkoutBtn.addEventListener("click", function(){
   const isOpen = checkRestaurantOpen();
   if(!isOpen){
     Toastify({
-      text: "OPS O Restaurante esta fechado",
+      text: "Ops o Restaurante está fechado!",
       duration: 3000,
       close: true,
       gravity: "top", // `top` or `bottom`
